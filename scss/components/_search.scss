@@ -1,0 +1,14 @@
+// search component
+
+#search {
+  font-family: 'Barlow', sans-serif;
+  width: 40%;
+  height: 2.5em;
+  border: solid 1px $color-primary;
+  border-radius: 5px;
+  margin: 20px;
+  padding-left: .5em;
+  &::placeholder {
+    color: $color-primary;
+  }
+}

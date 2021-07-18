@@ -1,0 +1,15 @@
+// Grid Component
+
+.container {
+  @include center;
+  width: 90%;
+}
+
+main {
+  @include center;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 20px;
+}
