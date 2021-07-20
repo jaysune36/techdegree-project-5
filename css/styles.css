@@ -393,7 +393,7 @@ img:hover {
   width: 90%;
 }
 
-main {
+.gallery {
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
