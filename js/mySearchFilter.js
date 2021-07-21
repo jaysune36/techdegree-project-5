@@ -1,5 +1,7 @@
+//Global Variables
 const searchBar = document.getElementById('search')
 
+// Function uses search bar input value to return img
 function searchInput() {
   let inputValue = searchBar.value.toLowerCase()
   const imgAnchor = document.querySelectorAll('.gallery a');
@@ -7,15 +9,14 @@ function searchInput() {
     const imgList = imgAnchor[i];
     const imgListData = imgList.dataset.caption;
     if(imgListData.toLowerCase().includes(inputValue)) {
-      console.log('this is true: ' + imgList );
       imgList.style.display = 'block';
     } else {
-      console.log("these are false: " + imgList );
       imgList.style.display = 'none';
     }
   }  
 }
 
-searchBar.addEventListener('onkeyup', () => {
+// SearchBar variable eventlistener will fire when a key is pressed to display img
+searchBar.addEventListener('keyup', () => {
   return searchInput();
 })
