@@ -1,9 +1,9 @@
 //Global Variables
-const searchBar = document.getElementById('search')
+const searchBar = document.getElementById('search');
 
-// Function uses search bar input value to return img
+// Function uses search bar input value to filter through img
 function searchInput() {
-  let inputValue = searchBar.value.toLowerCase()
+  let inputValue = searchBar.value.toLowerCase();
   const imgAnchor = document.querySelectorAll('.gallery a');
   for (let i=0; i<imgAnchor.length; i++) {
     const imgList = imgAnchor[i];
@@ -19,4 +19,4 @@ function searchInput() {
 // SearchBar variable eventlistener will fire when a key is pressed to display img
 searchBar.addEventListener('keyup', () => {
   return searchInput();
-})
+});

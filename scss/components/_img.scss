@@ -3,10 +3,12 @@
 a img {
   @include center;
   width: 100%;
-  transition: transform .5s ease-in;
+  transition: transform .5s ease-in,
+              opacity .5s;
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
+    opacity: 0.8;
   }
 }
 
