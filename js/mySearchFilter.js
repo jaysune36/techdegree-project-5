@@ -1,3 +1,5 @@
+// Created my own search filter using JS.
+
 //Global Variables
 const searchBar = document.getElementById('search');
 
